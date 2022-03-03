@@ -1,0 +1,20 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>WebRocketServlet</servlet-name>
+        <servlet-class>com.andersonfonseka.wr.server.WebRocketServlet</servlet-class>
+    </servlet>
+    
+    <context-param>
+    	<param-name>webAppClass</param-name>
+    	<param-value>com.andersonfonseka.wr.demo.DemoApplication</param-value>
+    </context-param>
+    
+    <servlet-mapping>
+        <servlet-name>WebRocketServlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+</web-app>

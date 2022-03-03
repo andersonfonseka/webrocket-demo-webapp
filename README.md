@@ -1,2 +1,2 @@
 # webrocket-demo-webapp
-WebRocekt running as Tomcat server
+WebRocket running at Tomcat server
